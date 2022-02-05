@@ -6,8 +6,10 @@ import { store } from './store';
 
 export default function App() {
   return (
-    <Provider store={store} styles={styles}>
-<HomeScreen/>
+    <Provider store={store}>
+    <View>
+<HomeScreen />
+    </View>
     </Provider>
   );
 }
@@ -15,6 +17,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: Platform.OS === 'android' ? 25 : 0
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
