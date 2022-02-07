@@ -1,11 +1,11 @@
-import { View, Text,SafeAreaView } from 'react-native';
+import { View, Text,SafeAreaView,StatusBar } from 'react-native';
 import React from 'react';
-
+console.log(StatusBar.currentHeight);
 const HomeScreen = () => {
   return (
-    <SafeAreaView >
+    <View style={{marginTop:StatusBar.currentHeight}}>
       <Text>Home Screen</Text>
-    </SafeAreaView>
+    </View>
   );
 };
 
