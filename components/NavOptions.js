@@ -3,9 +3,10 @@ import {
   View,
   FlatList,
   TouchableOpacity,
+  Image,
 } from "react-native";
 import React from "react";
-
+import tw from 'tailwind-react-native-classnames';
 const data = [
   {
     id: "123",
@@ -23,17 +24,29 @@ const data = [
 
 const NavOptions = () => {
   return (
+  <View>
     <FlatList
+    showsHorizontalScrollIndicator={false}
       data={data}
-      horizontal
-      renderItem={({ item }) => {
-        <TouchableOpacity>
-          <Text>{item.image}</Text>
-        </TouchableOpacity>;
-      }}
+      horizontal={true}
+      keyExtractor={(item) => item.id}
+      renderItem={({ item }) => (
+        <TouchableOpacity onPress={()=>(
+          console.log("Hafeeza Saand Hai")
+        )}
+        style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40`}>
+          <View>
+<Image source={{uri:item.image}} 
+style={{width:120,height:120,resizeMode:'contain'}}/>
+          </View>
+          <Text>{item.title}</Text>
+        </TouchableOpacity>
+      )}
+
+
     />
+  </View>
   );
 };
-
 export default NavOptions;
 
