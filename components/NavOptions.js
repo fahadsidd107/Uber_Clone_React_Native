@@ -1,7 +1,15 @@
+import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-function NavOptions() {
-  return <div></div>;
-}
+const NavOptions = () => {
+  return (
+    <View>
+      <Text></Text>
+    </View>
+  );
+};
 
 export default NavOptions;
+
+const styles = StyleSheet.create({});
+
