@@ -1,15 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,FlatList,TouchableOpacity } from 'react-native';
 import React from 'react';
 
 const data = [
   {
-    id:123,
+    id:"123",
     title: 'Get a ride',
     image: 'https://links.papareact.com/3pn',
     screen: 'MapScreen',
   },
   {
-    id:567,
+    id:"567",
     title: 'Order Food',
     image: 'https://links.papareact.com/28w',
     screen: 'EatsScreen',
@@ -18,9 +18,16 @@ const data = [
 
 const NavOptions = () => {
   return (
-    <View>
-      <Text>NavOptions</Text>
-    </View>
+    <FlatList 
+    data={data}
+    horizontal
+    renderItem={({ item }) => {
+<TouchableOpacity>
+  <Text>
+    {item.image}
+  </Text>
+</TouchableOpacity>
+     } }/>
   );
 };
 
