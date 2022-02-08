@@ -34,12 +34,16 @@ const NavOptions = () => {
         <TouchableOpacity onPress={()=>(
           console.log("Hafeeza Saand Hai")
         )}
-        style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40`}>
+        style={tw`p-2 pl-6 pb-4 pt-4 bg-gray-200 m-2 w-40`}>
           <View>
 <Image source={{uri:item.image}} 
 style={{width:120,height:120,resizeMode:'contain'}}/>
           </View>
-          <Text>{item.title}</Text>
+          <Text style={{
+            marginTop:2,
+            fontSize:18,
+            fontWeight:'bold',
+          }}>{item.title}</Text>
         </TouchableOpacity>
       )}
 
