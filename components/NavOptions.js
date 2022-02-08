@@ -5,13 +5,13 @@ const data = [
   {
     id:123,
     title: 'Get a ride',
-    image: 'https://picsum.photos/200/300',
+    image: 'https://links.papareact.com/3pn',
     screen: 'MapScreen',
   },
   {
     id:567,
     title: 'Order Food',
-    image: 'https://picsum.photos/200/300',
+    image: 'https://links.papareact.com/28w',
     screen: 'EatsScreen',
   },
 ];
