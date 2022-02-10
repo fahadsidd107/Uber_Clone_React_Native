@@ -35,17 +35,19 @@ const NavOptions = () => {
         <TouchableOpacity onPress={()=>(
           console.log("Bhetreen")
         )}
-        style={tw`p-2 pl-6 pb-4 pt-4 bg-gray-200 m-2 w-40`}>
+        style={tw`p-2 pl-6 pb-4 pt-4 bg-gray-200 m-2 w-40 rounded-2xl`}>
           <View>
 <Image source={{uri:item.image}} 
-style={{width:120,height:120,resizeMode:'contain'}}/>
+style={{width:100,height:100,resizeMode:'contain'}}/>
           </View>
           <Text style={{
             marginTop:2,
             fontSize:18,
             fontWeight:'bold',
           }}>{item.title}</Text>
-          <Icon type='antdesign' name="arrowright"  color="white" />
+          <Icon 
+          style={tw`p-2 bg-black rounded-full w-10 mt-2`}
+          type='antdesign' name="arrowright"  color="white" />
         </TouchableOpacity>
       )}
 
