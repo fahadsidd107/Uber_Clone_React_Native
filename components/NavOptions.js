@@ -7,6 +7,7 @@ import {
 } from "react-native";
 import React from "react";
 import tw from 'tailwind-react-native-classnames';
+import { Icon } from 'react-native-elements';
 const data = [
   {
     id: "123",
@@ -44,6 +45,7 @@ style={{width:120,height:120,resizeMode:'contain'}}/>
             fontSize:18,
             fontWeight:'bold',
           }}>{item.title}</Text>
+          <Icon type='antdesign' name="arrowright"  color="white" />
         </TouchableOpacity>
       )}
 
