@@ -1,9 +1,11 @@
-import { View, Text } from 'react-native'
+import { View, Text, StatusBar } from 'react-native'
 import React from 'react'
-
+console.log(StatusBar.currentHeight);
 const EatsScreen = () => {
   return (
-    <View>
+    <View
+    style={{marginTop:StatusBar.currentHeight}}
+    >
       <Text>EatsScreen</Text>
     </View>
   )
