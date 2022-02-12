@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "uber-clone-react-native",
-    "slug": "uber-clone-react-native",
+    "name": "UberClone",
+    "slug": "UberClone",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
