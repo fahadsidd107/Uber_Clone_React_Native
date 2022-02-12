@@ -6,7 +6,7 @@ console.log(StatusBar.currentHeight);
 const HomeScreen = () => {
   return (
     <View
-    //  style={{marginTop:StatusBar.currentHeight}}
+     style={{marginTop:StatusBar.currentHeight}}
      >
     {/* agr {} k ander[] krke normal styling dena chahain to krste hain  */}
       <View style={tw`p-5`}>
