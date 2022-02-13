@@ -24,7 +24,9 @@ const Map = () => {
         latitude: 24.898521,
         longitude: 67.053789,
       }}
-
+      title='Origin'
+      description={origin.description}
+      identifier='Origin'
     />
 )
 
