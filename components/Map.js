@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import MapView,{ Marker,mapType } from 'react-native-maps';
+import MapView,{ Marker,mapType,coordinate } from 'react-native-maps';
 import tw from 'tailwind-react-native-classnames';
 import { useSelector } from 'react-redux';
 import { selectOrigin } from '../slices/navSlices';
@@ -17,7 +17,19 @@ const Map = () => {
       longitudeDelta: 0.005,
     }}
     enablePoweredByContainer={false}
-  />
+  >
+    {
+      origin?.location && (
+ <Marker 
+ coordinate={{
+       latitude: 24.898521, //origin.location.lat,
+      longitude: 67.053789, //origin.location.lng,
+}}
+      )
+
+      }
+
+  </MapView>
   )
 }
 
