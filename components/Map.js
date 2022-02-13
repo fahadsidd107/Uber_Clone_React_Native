@@ -9,7 +9,7 @@ const Map = () => {
   return (
     <MapView
     style={tw`flex-1`}
-    mapType='mutedstandard'
+    // mapType='mutedstandard'
     initialRegion={{
       latitude: 24.898521, //origin.location.lat,
       longitude: 67.053789, //origin.location.lng,
@@ -18,17 +18,7 @@ const Map = () => {
     }}
     enablePoweredByContainer={false}
   >
-    {
-      origin?.location && (
- <Marker 
- coordinate={{
-       latitude: 24.898521, //origin.location.lat,
-      longitude: 67.053789, //origin.location.lng,
-}}
-      )
-
-      }
-
+{}
   </MapView>
   )
 }
