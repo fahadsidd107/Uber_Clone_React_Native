@@ -18,7 +18,17 @@ const Map = () => {
     }}
     enablePoweredByContainer={false}
   >
-{}
+{origin?.location && (
+    <Marker
+      coordinate={{
+        latitude: 24.898521,
+        longitude: 67.053789,
+      }}
+
+    />
+)
+
+}
   </MapView>
   )
 }
