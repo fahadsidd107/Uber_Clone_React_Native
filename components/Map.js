@@ -11,10 +11,10 @@ const Map = () => {
     style={tw`flex-1`}
     // mapType='mutedstandard'
     initialRegion={{
-      latitude: 24.898521, //origin.location.lat,
+      latitude: 24.898521,  //origin.location.lat,
       longitude: 67.053789, //origin.location.lng,
       latitudeDelta: 0.005,
-      longitudeDelta: 0.005,
+      longitudeDelta: 0.006,
     }}
     enablePoweredByContainer={false}
   >
