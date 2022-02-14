@@ -13,7 +13,7 @@ const Map = () => {
     initialRegion={{
       latitude: 24.898521,  //origin.location.lat,
       longitude: 67.053789, //origin.location.lng,
-      latitudeDelta: 0.005,
+      latitudeDelta: 0.006,
       longitudeDelta: 0.006,
     }}
     enablePoweredByContainer={false}
