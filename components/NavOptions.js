@@ -50,7 +50,7 @@ style={{width:100,height:100,resizeMode:'contain'}}/>
           }}>{item.title}</Text>
           <Icon 
           style={tw`p-2 bg-black rounded-full w-10 mt-2`}
-          type='antdesign' name="arrow right"  color="white" />
+          type='antdesign' name="arrowright"  color="white" />
         </TouchableOpacity>
       )}
 
