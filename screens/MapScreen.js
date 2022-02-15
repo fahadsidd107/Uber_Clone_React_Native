@@ -2,9 +2,12 @@ import { View, Text,StatusBar } from 'react-native'
 import React from 'react'
 import tw from 'tailwind-react-native-classnames';
 import Map from '../components/Map';
+import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StackActions } from '@react-navigation/native';
+import NavigationCard from '../components/NavigationCard';
 const MapScreen = () => {
+  const Stack = createNativeStackNavigator();
   return (
     <View
     // style={{marginTop:StatusBar.currentHeight}}
