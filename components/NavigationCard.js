@@ -4,7 +4,7 @@ import tw from "tailwind-react-native-classnames";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import { GOOGLE_MAPS_APIKEY } from '@env';
 import{ useDispatch } from 'react-redux';
-
+import { selectDestination, setDestination, setOrigin } from '../slices/navSlices';
 const NavigationCard = () => {
   const dispatch = useDispatch();
 
@@ -23,11 +23,11 @@ const NavigationCard = () => {
         language: 'en',
       }}
       onPress={(data, details = null) => {
-        dispatch(setOrigin({
+        dispatch(setDestination({
           location:details.geometry.location,
           description:data.description
         }));
-        dispatch(setDestination(null));
+        dispatch(setOrigin(null));
       }}
 
  />
