@@ -32,6 +32,13 @@ const whereToInputBoxStyle = StyleSheet.create({
     flex: 0,
   },
   textInput:{
+    backgroundColor: "#DDDDDF",
+    borderRadius: 0,
+    fontSize: 18,
+  },
+  textInputContainer:{
+    paddingHorizontal: 20,
+    paddingBottom: 0,
 
   }
 
