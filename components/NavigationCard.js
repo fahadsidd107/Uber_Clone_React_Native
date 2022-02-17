@@ -4,9 +4,7 @@ import React from 'react'
 const NavigationCard = () => {
   return (
   <SafeAreaView>
-      <View>
-      <Text>NavigationCard</Text>
-    </View>
+  <Text>NavigationCard</Text>
   </SafeAreaView>
   )
 }
