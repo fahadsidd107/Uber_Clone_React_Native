@@ -15,6 +15,7 @@ const NavigationCard = () => {
  placeholder="Where to?"
    nearbyPlacesAPI="GooglePlacesSearch"
    debounce={400}
+   styles={whereToInputBoxStyle}
 
  />
         </View>
