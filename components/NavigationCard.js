@@ -3,6 +3,7 @@ import React from "react";
 import tw from "tailwind-react-native-classnames";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import { GOOGLE_MAPS_APIKEY } from '@env';
+import { TextInput } from "react-native-web";
 
 const NavigationCard = () => {
   return (
@@ -10,7 +11,12 @@ const NavigationCard = () => {
       <Text style={tw`text-center py-5 text-xl`}>Good Morning , Fahad</Text>
       <View style={tw`border-t border-gray-200 flex-shrink`}>
         <View>
+ <GooglePlacesAutocomplete 
+ placeholder="Where to?"
+   nearbyPlacesAPI="GooglePlacesSearch"
+   debounce={400}
 
+ />
         </View>
       </View>
     </SafeAreaView>
@@ -19,4 +25,14 @@ const NavigationCard = () => {
 
 export default NavigationCard;
 
-const styles = StyleSheet.create({});
+const whereToInputBoxStyle = StyleSheet.create({
+  container: {
+    backgroundColor: "white",
+    paddingTop: 20,
+    flex: 0,
+  },
+  textInput:{
+
+  }
+
+});
