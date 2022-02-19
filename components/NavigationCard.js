@@ -51,7 +51,7 @@ const whereToInputBoxStyle = StyleSheet.create({
     flex: 0,
   },
   textInput:{
-    backgroundColor: "#DDDDDD",
+    backgroundColor: "#DDDDDF",
     borderRadius: 0,
     fontSize: 18,
   },
