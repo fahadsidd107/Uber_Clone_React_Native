@@ -55,10 +55,6 @@ const whereToInputBoxStyle = StyleSheet.create({
     borderRadius: 0,
     fontSize: 18,
   },
-  textInputContainer:{
-    paddingHorizontal: 20,
-    paddingBottom: 0,
 
-  }
 
 });
