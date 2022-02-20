@@ -3,7 +3,9 @@ import React from 'react'
 import MapView,{ Marker,mapType,coordinate } from 'react-native-maps';
 import tw from 'tailwind-react-native-classnames';
 import { useSelector } from 'react-redux';
-import { selectOrigin } from '../slices/navSlices';
+import { selectOrigin,selectDestination } from '../slices/navSlices';
+import { MapViewDirections } from 'react-native-maps-directions';
+
 const Map = () => {
     const origin =useSelector(selectOrigin)
     const destination = useSelector(selectDestination)
@@ -19,6 +21,9 @@ const Map = () => {
     }}
     enablePoweredByContainer={false}
   >
+  {origin && destination (
+    <MapViewDirections/>
+  )}
 {origin?.location && (
     <Marker
       coordinate={{
