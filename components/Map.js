@@ -6,12 +6,15 @@ import { useSelector } from 'react-redux';
 import { selectOrigin,selectDestination } from '../slices/navSlices';
 import { MapViewDirections } from 'react-native-maps-directions';
 import { GOOGLE_MAPS_APIKEY } from '@env';
+import { useRef } from 'react';
 
 const Map = () => {
     const origin =useSelector(selectOrigin)
     const destination = useSelector(selectDestination)
+    const mapRef = useRef(null)
   return (
     <MapView
+    ref={mapRef}
     style={tw`flex-1`}
     // mapType='mutedstandard'
     initialRegion={{
