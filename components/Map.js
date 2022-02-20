@@ -27,6 +27,8 @@ const Map = () => {
       origin={origin.description}
       destination={destination.description}
       apikey={GOOGLE_MAPS_APIKEY}
+      strokeWidth={1}
+      strokeColor="black"
     />
   )}
 {origin?.location && (
