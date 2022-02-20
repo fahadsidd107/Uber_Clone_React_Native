@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { selectOrigin } from '../slices/navSlices';
 const Map = () => {
     const origin =useSelector(selectOrigin)
+    const destination = useSelector(selectDestination)
   return (
     <MapView
     style={tw`flex-1`}
