@@ -23,7 +23,7 @@ const NavFavourites = () => {
       keyExtractor={(item) => item.id}
       renderItem={({ item }) => ( 
        <TouchableOpacity>
-
+<Text>Yo</Text>
        </TouchableOpacity>
       )}
     />
