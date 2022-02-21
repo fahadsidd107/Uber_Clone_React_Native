@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 const data=[
@@ -18,9 +18,15 @@ const data=[
 
 const NavFavourites = () => {
   return (
-    <View>
-      <Text>NavFavourites</Text>
-    </View>
+    <FlatList
+      data={data}
+      keyExtractor={(item) => item.id}
+      renderItem={({ item }) => ( 
+       <TouchableOpacity>
+
+       </TouchableOpacity>
+      )}
+    />
   )
 }
 
