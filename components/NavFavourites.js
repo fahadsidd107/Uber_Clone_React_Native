@@ -22,6 +22,12 @@ const data = [
     location: "Work",
     destination: "London Eye, London, UK",
   },
+  {
+    id: 789,
+    icon: "book-outline",
+    location: "University",
+    destination: "London Eye, London, UK",
+  },
 ];
 
 const NavFavourites = () => {
@@ -29,8 +35,13 @@ const NavFavourites = () => {
     <FlatList
       data={data}
       keyExtractor={(item) => item.id}
-      renderItem={({ item : {location,destination,icon} }) => (
-        <TouchableOpacity style={tw`flex-row item-center p-5`}>
+      ItemSeparatorComponent={() => (
+        <View 
+        style={[tw`bg-gray-300`,{height:0.5}]}
+         />
+      )}
+      renderItem={({ item: { location, destination, icon } }) => (
+        <TouchableOpacity style={tw`flex-row p-5`}>
           <Icon
             style={tw`mr-4 rounded-full bg-gray-300 p-3`}
             name={icon}
@@ -38,6 +49,10 @@ const NavFavourites = () => {
             color="white"
             size={18}
           />
+          <View>
+            <Text style={tw`font-semibold text-lg`}>{location}</Text>
+            <Text style={tw`text-gray-500`}>{destination}</Text>
+          </View>
         </TouchableOpacity>
       )}
     />
