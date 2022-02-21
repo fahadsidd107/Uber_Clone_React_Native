@@ -7,6 +7,12 @@ const data=[
         icon:'home',
         location:'Home',
         destination: 'Code Street, London, UK',
+    },
+    {
+        id:456,
+        icon:'breifcase',
+        location:'Work',
+        destination: 'London Eye, London, UK',
     }
 ]
 
