@@ -7,6 +7,7 @@ import{ useDispatch } from 'react-redux';
 import { selectDestination, setDestination, setOrigin } from '../slices/navSlices';
 import { useNavigation } from "@react-navigation/native";
 import NavFavourites from '../components/NavFavourites';
+import moment from 'moment';
 
 const NavigationCard = () => {
   const dispatch = useDispatch();
@@ -14,7 +15,7 @@ const NavigationCard = () => {
 
   return (
     <SafeAreaView style={tw`bg-white flex-1`}>
-      <Text style={tw`text-center py-5 text-xl`}>Good Morning , Fahad</Text>
+      <Text style={tw`text-center py-5 text-xl`}>Good Morning{moment().format('LT')} , Fahad</Text>
       <View style={tw`border-t border-gray-200 flex-shrink`}>
         <View>
  <GooglePlacesAutocomplete 
