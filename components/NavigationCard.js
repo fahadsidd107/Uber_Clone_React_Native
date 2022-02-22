@@ -11,7 +11,6 @@ import {
 } from "../slices/navSlices";
 import { useNavigation } from "@react-navigation/native";
 import NavFavourites from "../components/NavFavourites";
-import moment from "moment";
 
 var day = new Date();
 var hr = day.getHours();
