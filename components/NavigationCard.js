@@ -1,46 +1,63 @@
-import { StyleSheet, Text, View, SafeAreaView,TextInput } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView, TextInput } from "react-native";
 import React from "react";
 import tw from "tailwind-react-native-classnames";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
-import { GOOGLE_MAPS_APIKEY } from '@env';
-import{ useDispatch } from 'react-redux';
-import { selectDestination, setDestination, setOrigin } from '../slices/navSlices';
+import { GOOGLE_MAPS_APIKEY } from "@env";
+import { useDispatch } from "react-redux";
+import {
+  selectDestination,
+  setDestination,
+  setOrigin,
+} from "../slices/navSlices";
 import { useNavigation } from "@react-navigation/native";
-import NavFavourites from '../components/NavFavourites';
-import moment from 'moment';
+import NavFavourites from "../components/NavFavourites";
+import moment from "moment";
+
+var day = new Date();
+var hr = day.getHours();
+if (hr >= 0 && hr < 12) {
+var wish = "Good Morning!";
+} else if (hr == 12) {
+var wish = "Good Noon!";
+} else if (hr >= 12 && hr <= 17) {
+var wish = "Good Afternoon!";
+} else {
+var wish = "Good Evening!";
+}
 
 const NavigationCard = () => {
   const dispatch = useDispatch();
-  const navigation = useNavigation()
+  const navigation = useNavigation();
+
 
   return (
     <SafeAreaView style={tw`bg-white flex-1`}>
-      <Text style={tw`text-center py-5 text-xl`}>Good Morning{moment().format('LT')} , Fahad</Text>
+      <Text style={tw`text-center py-5 text-xl`}>
+        {wish} , Fahad
+      </Text>
       <View style={tw`border-t border-gray-200 flex-shrink`}>
         <View>
- <GooglePlacesAutocomplete 
- placeholder="Where to?"
-   nearbyPlacesAPI="GooglePlacesSearch"
-   debounce={400}
-   styles={whereToInputBoxStyle}
-   query={{
-        key: GOOGLE_MAPS_APIKEY,
-        language: 'en',
-      }}
-      onPress={(data, details = null) => {
-        dispatch(
-          setDestination({
-          location:details.geometry.location,
-          description:data.description
-        }));
-        navigation.navigate('RiderOptionCard')
-        
-      }}
-      
-
- />
+          <GooglePlacesAutocomplete
+            placeholder="Where to?"
+            nearbyPlacesAPI="GooglePlacesSearch"
+            debounce={400}
+            styles={whereToInputBoxStyle}
+            query={{
+              key: GOOGLE_MAPS_APIKEY,
+              language: "en",
+            }}
+            onPress={(data, details = null) => {
+              dispatch(
+                setDestination({
+                  location: details.geometry.location,
+                  description: data.description,
+                })
+              );
+              navigation.navigate("RiderOptionCard");
+            }}
+          />
         </View>
-        <NavFavourites/>
+        <NavFavourites />
       </View>
     </SafeAreaView>
   );
@@ -54,14 +71,13 @@ const whereToInputBoxStyle = StyleSheet.create({
     paddingTop: 20,
     flex: 0,
   },
-  textInput:{
+  textInput: {
     backgroundColor: "#DDDDDF",
     borderRadius: 0,
     fontSize: 18,
   },
-  textInputContainer:{
+  textInputContainer: {
     paddingHorizontal: 20,
     paddingBottom: 0,
-  }
-
+  },
 });
