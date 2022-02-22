@@ -16,13 +16,13 @@ import moment from "moment";
 var day = new Date();
 var hr = day.getHours();
 if (hr >= 0 && hr < 12) {
-var wish = "Good Morning!";
+var wish = "Good Morning !";
 } else if (hr == 12) {
-var wish = "Good Noon!";
+var wish = "Good Noon !";
 } else if (hr >= 12 && hr <= 17) {
-var wish = "Good Afternoon!";
+var wish = "Good Afternoon !";
 } else {
-var wish = "Good Evening!";
+var wish = "Good Evening !";
 }
 
 const NavigationCard = () => {
