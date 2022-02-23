@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { View,StyleSheet } from 'react-native';
+import { View,StyleSheet,KeyboardAvoidingView } from 'react-native';
 import {Provider} from 'react-redux';
 import HomeScreen from './screens/HomeScreen';
 import MapScreen from './screens/MapScreen';
