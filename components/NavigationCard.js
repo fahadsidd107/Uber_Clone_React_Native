@@ -4,6 +4,7 @@ import tw from "tailwind-react-native-classnames";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import { GOOGLE_MAPS_APIKEY } from "@env";
 import { useDispatch } from "react-redux";
+import { Icon } from "react-native-elements";
 import {
   selectDestination,
   setDestination,
@@ -60,7 +61,8 @@ const NavigationCard = () => {
       </View>
       <View>
         <TouchableOpacity>
-
+<Icon name='car' type='font-awesome' color='#fff' size={16} />
+<Text style={tw`text-white text-center`}>Rides</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
