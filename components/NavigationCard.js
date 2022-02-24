@@ -1,4 +1,11 @@
-import { StyleSheet, Text, View, SafeAreaView, TextInput,TouchableOpacity } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
 import tw from "tailwind-react-native-classnames";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
@@ -16,19 +23,18 @@ import NavFavourites from "../components/NavFavourites";
 var day = new Date();
 var hr = day.getHours();
 if (hr >= 0 && hr < 12) {
-var wish = "Good Morning !";
+  var wish = "Good Morning !";
 } else if (hr == 12) {
-var wish = "Good Noon !";
+  var wish = "Good Noon !";
 } else if (hr >= 12 && hr <= 17) {
-var wish = "Good Afternoon !";
+  var wish = "Good Afternoon !";
 } else {
-var wish = "Good Evening !";
+  var wish = "Good Evening !";
 }
-var user = 'Fahad Siddiqui';
+var user = "Fahad Siddiqui";
 const NavigationCard = () => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
-
 
   return (
     <SafeAreaView style={tw`bg-white flex-1`}>
@@ -59,16 +65,26 @@ const NavigationCard = () => {
         </View>
         <NavFavourites />
       </View>
-      <View style={tw`flex-row bg-white justify-evenly py-2 mt-auto border-t border-gray-200`}>
-        <TouchableOpacity 
-        onPress={() => navigation.navigate("RideOptionCard")}
-        style={tw`flex flex-row justify-between bg-black w-24 px-4 py-3 rounded-full`}>
-<Icon name='car' type='font-awesome' color='#fff' size={16} />
-<Text style={tw`text-white text-center`}>Rides</Text>
+      <View
+        style={tw`flex-row bg-white justify-evenly py-2 mt-auto border-t border-gray-200`}
+      >
+        <TouchableOpacity
+          onPress={() => navigation.navigate("RideOptionCard")}
+          style={tw`flex flex-row justify-between bg-black w-24 px-4 py-3 rounded-full`}
+        >
+          <Icon name="car" type="font-awesome" color="#fff" size={16} />
+          <Text style={tw`text-white text-center`}>Rides</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={tw`flex flex-row  justify-between w-24 px-4 py-3 rounded-full border`}>
-<Icon name='fast-food-outline' type='ionicon' color='#000' size={16} />
-<Text style={tw`text-black text-center`}>Eats</Text>
+        <TouchableOpacity
+          style={tw`flex flex-row  justify-between w-24 px-4 py-3 rounded-full border`}
+        >
+          <Icon
+            name="fast-food-outline"
+            type="ionicon"
+            color="#000"
+            size={16}
+          />
+          <Text style={tw`text-black text-center`}>Eats</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
