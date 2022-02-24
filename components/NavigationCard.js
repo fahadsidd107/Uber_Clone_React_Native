@@ -66,7 +66,7 @@ const NavigationCard = () => {
 <Icon name='car' type='font-awesome' color='#fff' size={16} />
 <Text style={tw`text-white text-center`}>Rides</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={tw`flex flex-row  justify-between w-24 px-4 py-3 rounded-full`}>
+        <TouchableOpacity style={tw`flex flex-row  justify-between w-24 px-4 py-3 rounded-full border`}>
 <Icon name='fast-food-outline' type='ionicon' color='#000' size={16} />
 <Text style={tw`text-black text-center`}>Eats</Text>
         </TouchableOpacity>
