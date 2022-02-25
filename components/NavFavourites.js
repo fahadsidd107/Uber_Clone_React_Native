@@ -20,7 +20,7 @@ const data = [
     id: 456,
     icon: "briefcase",
     location: "Work",
-    destination: "Baloch Colony Flyover, opposite Preston University, Near HBL, Karachi",
+    destination: "Baloch Colony Flyover, opposite Preston University, Near HBL, Karachi, PAK",
   },
   {
     id: 789,
