@@ -18,7 +18,7 @@ const HomeScreen = () => {
      style={{marginTop:StatusBar.currentHeight}}
      >
     {/* agr {} k ander[] krke normal styling dena chahain to krste hain  */}
-      <View style={tw`p-5`}>
+      <View style={tw`p-6`}>
         <Image
         style={{
           width:100,
