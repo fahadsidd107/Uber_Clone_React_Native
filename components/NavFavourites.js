@@ -14,19 +14,19 @@ const data = [
     id: 123,
     icon: "home",
     location: "Home",
-    destination: "Code Street, London, UK",
+    destination: "House # 8/23,A-Area, Liquatabad, Karachi, PAK",
   },
   {
     id: 456,
     icon: "briefcase",
     location: "Work",
-    destination: "London Eye, London, UK",
+    destination: "Baloch Colony Flyover, opposite Preston University, Near HBL, Karachi",
   },
   {
     id: 789,
     icon: "book-outline",
     location: "University",
-    destination: "London Eye, London, UK",
+    destination: "London Eye, London, PAK",
   },
 ];
 
