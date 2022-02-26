@@ -26,7 +26,7 @@ const data = [
     id: 789,
     icon: "book-outline",
     location: "University",
-    destination: "London Eye, London, PAK",
+    destination: "ST-16 University Rd, Block 5 Gulshan-e-Iqbal, Karachi, PAK",
   },
 ];
 
@@ -41,7 +41,7 @@ const NavFavourites = () => {
          />
       )}
       renderItem={({ item: { location, destination, icon } }) => (
-        <TouchableOpacity style={tw`flex-row p-5`}>
+        <TouchableOpacity style={[tw`flex-row p-5`]}>
           <Icon
             style={tw`mr-4 rounded-full bg-gray-300 p-3`}
             name={icon}
@@ -51,7 +51,9 @@ const NavFavourites = () => {
           />
           <View>
             <Text style={tw`font-semibold text-lg`}>{location}</Text>
+            <View style={{padding:10}}>
             <Text style={tw`text-gray-500`}>{destination}</Text>
+            </View>
           </View>
         </TouchableOpacity>
       )}
