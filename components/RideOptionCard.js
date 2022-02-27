@@ -14,7 +14,7 @@ onPress={()=>{ navigation.navigate('NavigationCard') }}
 style={tw`absolute top-3 left-5 p-3 z-50 rounded-full bg-black`} >
 <Icon name='chevron-left' type="fontawesome" color='white'/>
 </TouchableOpacity>
-      <Text style={tw`text-center my-5 text-xl`}>Select Your <View style={[,{height:0,width:100}]}>
+      <Text style={tw`text-center my-5 text-xl`}>Select Your Ride</Text>
     </View>
     </View>
   );
