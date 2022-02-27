@@ -6,13 +6,10 @@ const RideOptionCard = () => {
   return (
     <View style={tw`bg-white flex-grow`}>
     <View>
-<TouchableOpacity>
+<TouchableOpacity style={tw`absolute top-3 left-5 p-3 rounded-full`} >
 <Icon
-            style={tw`mr-4 rounded-full bg-gray-300 p-3`}
             name='chevron-left'
             type="fontawesome"
-            color="white"
-            size={18}
           />
 </TouchableOpacity>
       <Text style={tw`text-center my-5 text-xl`}>Select Your Ride</Text>
