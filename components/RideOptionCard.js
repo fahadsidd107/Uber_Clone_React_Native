@@ -3,7 +3,7 @@ import React from "react";
 import tw from 'tailwind-react-native-classnames';
 const RideOptionCard = () => {
   return (
-    <View>
+    <View style={tw`bg-white flex-grow`}>
       <Text style={tw`text-center my-5 text-xl`}>Select Your Ride</Text>
     </View>
   );
