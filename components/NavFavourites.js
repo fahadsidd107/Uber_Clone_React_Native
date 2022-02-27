@@ -51,7 +51,7 @@ const NavFavourites = () => {
           />
           <View>
             <Text style={tw`font-semibold text-lg`}>{location}</Text>
-            <View style={{paddingRight:6}}>
+            <View style={{paddingRight:50}}>
             <Text style={tw`text-gray-500`}>{destination}</Text>
             </View>
           </View>
