@@ -10,7 +10,7 @@ const RideOptionCard = () => {
     <View style={tw`bg-white flex-grow`}>
     <View>
 <TouchableOpacity 
-onPress={()=>{}}
+onPress={()=>{navigation.navigate('HomeScreen')}}
 style={tw`absolute top-3 left-5 p-3 rounded-full bg-red-200`} >
 <Icon
             name='chevron-left'
