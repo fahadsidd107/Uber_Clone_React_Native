@@ -11,7 +11,7 @@ const RideOptionCard = () => {
     <View>
 <TouchableOpacity 
 onPress={()=>{ navigation.navigate('NavigationCard') }}
-style={tw`absolute top-3 left-5 p-3 z-50 rounded-full bg-black`} >
+style={tw`absolute top-3 left-5 p-3 z-50 rounded-full bg-white`} >
 <Icon name='chevron-left' type="fontawesome" color='white'/>
 </TouchableOpacity>
       <Text style={tw`text-center my-5 text-xl`}>Select Your Ride</Text>
