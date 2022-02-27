@@ -36,7 +36,7 @@ const HomeScreen = () => {
           flex: 0,
         },
         textInput: {
-          fontSize: 14,
+          fontSize: 10,
         }
       }}
       onPress={(data, details = null) => {
