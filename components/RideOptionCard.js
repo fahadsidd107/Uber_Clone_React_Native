@@ -13,13 +13,13 @@ const data =[
   },
   {
     id:"Uber-XL-456",
-    title:"UberX",
+    title:"Uber XL",
     multiplier:"1",
     imagw:"https://links.papareact.com/3pn"
   },
   {
     id:"Uber-LUX-789",
-    title:"UberX",
+    title:"Uber LUX",
     multiplier:"1",
     imagw:"https://links.papareact.com/3pn"
   },
