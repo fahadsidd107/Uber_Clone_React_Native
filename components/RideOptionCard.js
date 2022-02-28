@@ -36,7 +36,12 @@ style={tw`absolute top-3 left-5 p-3 z-50 rounded-full bg-black`} >
 </TouchableOpacity>
       <Text style={tw`text-center my-5 text-xl`}>Select Your Ride</Text>
     </View>
-    <FlatList data={data}/>
+    <FlatList data={data} 
+      keyExtractor={(item)=>item.id}
+      renderItem={({item})=>(
+        
+      )}
+    />
     </View>
   );
 };
