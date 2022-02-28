@@ -39,7 +39,11 @@ style={tw`absolute top-3 left-5 p-3 z-50 rounded-full bg-black`} >
     <FlatList data={data} 
       keyExtractor={(item)=>item.id}
       renderItem={({item})=>(
-        
+       <TouchableOpacity>
+         <Text>
+           Fahad
+         </Text>
+       </TouchableOpacity> 
       )}
     />
     </View>
