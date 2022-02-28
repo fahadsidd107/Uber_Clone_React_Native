@@ -4,6 +4,26 @@ import tw from 'tailwind-react-native-classnames';
 import { Icon } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
 
+const data =[
+  {
+    id:"Uber-X-123",
+    title:"UberX",
+    multiplier:"1",
+    imagw:"https://links.papareact.com/3pn"
+  },
+  {
+    id:"Uber-XL-456",
+    title:"UberX",
+    multiplier:"1",
+    imagw:"https://links.papareact.com/3pn"
+  },
+  {
+    id:"Uber-LUX-789",
+    title:"UberX",
+    multiplier:"1",
+    imagw:"https://links.papareact.com/3pn"
+  },
+]
 const RideOptionCard = () => {
   const navigation = useNavigation();
   return (
