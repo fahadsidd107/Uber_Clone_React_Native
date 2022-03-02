@@ -41,7 +41,14 @@ style={tw`absolute top-3 left-5 p-3 z-50 rounded-full bg-black`} >
       keyExtractor={(item)=>item.id}
       renderItem={({item : {id ,title ,multiplier ,image},item})=>(
        <TouchableOpacity style={tw`flex-row justify-between items-center px-10`}>
-     
+       <Image
+         style={{
+           width:100,
+            height:100,
+            resizeMode:'contain',
+         }}
+         source={{uri:image}}
+       />
        <View style={tw`-ml-6`}>
          <Text style={tw`text-xl font-semibold`}>{title}</Text>
          <Text>Travel Time...</Text>
