@@ -53,7 +53,7 @@ style={tw`absolute top-3 left-5 p-3 z-50 rounded-full bg-black`} >
          <Text style={tw`text-xl font-semibold`}>{title}</Text>
          <Text>Travel Time...</Text>
        </View>
-       <Text style={tw`text-xl`}>$99</Text>
+     
        </TouchableOpacity> 
       )}
     />
