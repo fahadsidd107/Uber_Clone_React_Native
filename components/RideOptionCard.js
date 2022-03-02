@@ -57,7 +57,7 @@ style={tw`absolute top-1 left-5 p-3 z-50 rounded-full bg-black`} >
          <Text style={tw`text-xl font-semibold`}>{title}</Text>
          <Text>Travel Time...</Text>
        </View>
-       <Text style={tw`text-xl font-bold`}>Rs.{1*multiplier}</Text>
+       <Text style={tw`text-xl font-bold`}>Rs.</Text>
        </TouchableOpacity> 
       )}
     />
