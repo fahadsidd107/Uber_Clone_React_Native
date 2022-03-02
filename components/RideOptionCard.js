@@ -43,7 +43,8 @@ style={tw`absolute top-1 left-5 p-3 z-50 rounded-full bg-black`} >
       renderItem={({item : {id ,title ,multiplier ,image},item})=>(
        <TouchableOpacity 
        onPress={()=>{setSelected(item)}}
-       style={tw`flex-row justify-between items-center px-10 `}>
+       style={tw`flex-row justify-between items-center px-10 ${
+         id === selected?.id && 'bg-gray-200'}`}>
        <Image
          style={{
            width:90,
