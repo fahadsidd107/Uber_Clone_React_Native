@@ -21,7 +21,11 @@ mapRef.current.fitToSuppliedMarkers([origin,destination], {
     });
    },[ origin,destination])
 
-   useEffect(()=>{},[origin,destination,GOOGLE_MAPS_APIKEY])
+   useEffect(()=>{
+     const getTravelTime=()=>{}
+
+     getTravelTime()
+   },[origin,destination,GOOGLE_MAPS_APIKEY])
     
   return (
     <MapView
