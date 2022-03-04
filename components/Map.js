@@ -20,6 +20,8 @@ mapRef.current.fitToSuppliedMarkers([origin,destination], {
     animated: true,
     });
    },[ origin,destination])
+
+   useEffect(()=>{},[origin,destination,GOOGLE_MAPS_APIKEY])
     
   return (
     <MapView
