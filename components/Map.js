@@ -24,6 +24,9 @@ mapRef.current.fitToSuppliedMarkers([origin,destination], {
    useEffect(()=>{
      if (!origin && !destination) return;
      const getTravelTime= async()=>{
+       const URL = `https://maps.googleapis.com/maps/api/distancematrix/json?
+       units=imperial&origins=${origin.description}&destinations=${destination.description}
+       &key=${GOOGLE_MAPS_APIKEY}`
 
      }
 
