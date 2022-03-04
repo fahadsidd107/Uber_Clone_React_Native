@@ -22,7 +22,10 @@ mapRef.current.fitToSuppliedMarkers([origin,destination], {
    },[ origin,destination])
 
    useEffect(()=>{
-     const getTravelTime=()=>{}
+     if (!origin && !destination) return;
+     const getTravelTime= async()=>{
+
+     }
 
      getTravelTime()
    },[origin,destination,GOOGLE_MAPS_APIKEY])
