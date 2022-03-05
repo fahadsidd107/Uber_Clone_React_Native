@@ -3,6 +3,8 @@ import React,{ useState }  from "react";
 import tw from 'tailwind-react-native-classnames';
 import { Icon } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
+import{ useSelector } from 'react-redux';
+import { selectTravelTimeInformation } from "../slices/navSlices";
 
 const data =[
   {
@@ -27,6 +29,7 @@ const data =[
 const RideOptionCard = () => {
   const navigation = useNavigation();
   const [selected,setSelected] = useState(null);
+  const travelTimeInformation =useSelector(selectTravelTimeInformation)
   return (
 <SafeAreaView>
     <View style={tw`bg-white flex-grow`}>
