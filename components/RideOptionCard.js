@@ -63,7 +63,13 @@ style={tw`absolute top-1 left-5 p-3 z-50 rounded-full bg-black`} >
          <Text style={tw`text-xl font-semibold`}>{title}</Text>
          <Text>{travelTimeInformation?.distance.text} Travel Time</Text>
        </View>
-       <Text style={tw`text-xl font-bold`}>Rs.{1*multiplier}</Text>
+       <Text style={tw`text-xl font-bold`}>Rs.{
+         new Intl.NumberFormat('en-gb',{
+            style:'currency',
+            currency:'INR'
+          }).format(travelTimeInformation?.distance.value * multiplier)
+          
+       }</Text>
        </TouchableOpacity> 
       )}
     />
