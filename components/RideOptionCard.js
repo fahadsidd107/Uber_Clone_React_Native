@@ -26,6 +26,9 @@ const data =[
     image:"https://links.papareact.com/7pf"
   },
 ]
+
+const SURGE_CHARGE_RATE = 1.5;
+
 const RideOptionCard = () => {
   const navigation = useNavigation();
   const [selected,setSelected] = useState(null);
@@ -58,7 +61,7 @@ style={tw`absolute top-1 left-5 p-3 z-50 rounded-full bg-black`} >
        />
        <View style={tw`-ml-6`}>
          <Text style={tw`text-xl font-semibold`}>{title}</Text>
-         <Text>{travelTimeInformation?.distance.text}</Text>
+         <Text>{travelTimeInformation?.distance.text} Travel Time</Text>
        </View>
        <Text style={tw`text-xl font-bold`}>Rs.{1*multiplier}</Text>
        </TouchableOpacity> 
