@@ -63,7 +63,7 @@ style={tw`absolute top-1 left-5 p-3 z-50 rounded-full bg-black`} >
          <Text style={tw`text-xl font-semibold`}>{title}</Text>
          <Text>{travelTimeInformation?.distance.text} Travel Time</Text>
        </View>
-       <Text style={tw`text-xl font-bold`}>Rs.200
+       <Text style={tw`text-xl font-bold`}>{200 * multiplier}
        {/* {
          new Intl.NumberFormat('en-gb',{
             style:'currency',
