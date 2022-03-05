@@ -75,7 +75,7 @@ style={tw`absolute top-1 left-5 p-3 z-50 rounded-full bg-black`} >
        </TouchableOpacity> 
       )}
     />
-    <View>
+    <View style={tw`mt-auto border-t border-gray-200`}>
       <TouchableOpacity disabled={!selected} style={tw`bg-black py-2 m-1 ${!selected && 'bg-gray-300'}`}>
 <Text style={tw`text-center text-white text-xl`}>
   Choose {selected?.title}
