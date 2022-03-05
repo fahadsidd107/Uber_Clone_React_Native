@@ -39,7 +39,7 @@ onPress={()=>{ navigation.navigate('NavigationCard') }}
 style={tw`absolute top-1 left-5 p-3 z-50 rounded-full bg-black`} >
 <Icon name='chevron-left' type="fontawesome" color='white'/>
 </TouchableOpacity>
-      <Text style={tw`text-center my-3 text-xl`}>Select Your Ride</Text>
+      <Text style={tw`text-center my-3 text-xl`}>Select Your Ride - {travelTimeInformation?.distance.text}</Text>
     </View>
     <FlatList data={data} 
       keyExtractor={(item)=>item.id}
